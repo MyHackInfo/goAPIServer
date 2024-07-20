@@ -1,12 +1,19 @@
-# goland
+# Golang Web Server
+This repository uses Go as a web server for backend APIs.
 
-# This repo use go as webserver for backend api 
+## Running the Go Server
+To run the Go server, use the following command:
 
-## go run filename
+```cmd: go run filename.go```
 
-# This go cmd use for init go module 
-## go mod init
+### Initializing a Go Module
+To initialize a Go module, use the following command:
 
-# This go cmd use for get dep of module also install module which is located on your file with import like "fmt"
+```cmd: go mod init```
 
-# go mod tidy
+### Managing Dependencies
+To manage and install dependencies, use the following command:
+
+```cmd: go mod tidy```
+
+This command retrieves the dependencies of the module and installs any required packages specified in your import statements, such as "fmt".
