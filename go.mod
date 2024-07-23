@@ -1,4 +1,4 @@
-module web
+module goAPIServer
 
 go 1.22.5
 

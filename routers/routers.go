@@ -14,5 +14,5 @@ func InitRoutes() *mux.Router {
 }
 
 func root(w http.ResponseWriter, _ *http.Request) {
-	fmt.Fprintln(w, "Welcome Back... with go...")
+	fmt.Fprintln(w, "Welcome Back... with go...lang")
 }

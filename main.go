@@ -1,9 +1,9 @@
 package main
 
 import (
+	"goAPIServer/routers"
 	"log"
 	"net/http"
-	"web/routers"
 )
 
 func main() {
