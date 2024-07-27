@@ -1,18 +1,16 @@
 package routers
 
 import (
-	"fmt"
-	"net/http"
+	"goAPIServer/routers/handlers"
 
 	"github.com/gorilla/mux"
 )
 
 func InitRoutes() *mux.Router {
 	router := mux.NewRouter()
-	router.HandleFunc("/", root).Methods("GET")
-	return router
-}
+	router.HandleFunc("/", handlers.Root).Methods("GET")
+	router.HandleFunc("/status", handlers.Status).Methods("GET")
+	router.HandleFunc("/{id}/AddData", handlers.AddData).Methods("POST")
 
-func root(w http.ResponseWriter, _ *http.Request) {
-	fmt.Fprintln(w, "Welcome Back... with go...lang")
+	return router
 }

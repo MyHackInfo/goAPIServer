@@ -1,5 +1,5 @@
 # Golang Web Server
-This repository uses Go as a web server for backend APIs.
+This repository uses Go as a web server for backend APIs by using gorilla/mux.
 
 ## Running the Go Server
 To run the Go server, use the following command:
